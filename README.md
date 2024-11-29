@@ -22,8 +22,3 @@ This repository contains all the essential knowledge of tools, frameworks, libra
 ## How to Use
 
 Clone this repository and explore the folders to find examples, templates, and tutorials for your frontend projects.
-
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
