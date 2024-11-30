@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+
+    <!-- When user will write something inside the inputs present in form and submit it by pressing enter -->
+    <!-- the data will be submitted and in the url the value of name attribute will append to the url present in 
+     the action attribute. 
+    -->
+
+    <form action="/Html/5.%20Forms/">
+      <input type="text" name="search" placeholder="search" />
+      <button>Search</button>
+    </form>
+
+    <br />
+
+    <form action="https://www.youtube.com/results">
+      <!-- We can attach the label with the desired input by using the for and id attribute -->
+      <!-- Also when we attach these 2 then if user clicks on the label the attached input will be focused -->
+      <label for="id">Youtube search</label>
+      <input
+        id="id"
+        type="text"
+        name="search_query"
+        placeholder="youtube search"
+      />
+      <button>Search</button>
+    </form>
+
+    <br />
+
+    <form action="https://www.flipkart.com/search">
+      <input type="text" name="q" placeholder="flipkart search" />
+      <button>Search</button>
+    </form>
+
+    <br />
+
+    <form action="/Html/5.%20Forms/">
+      <input type="text" name="a" required />
+      <input type="text" name="b" required />
+      <input type="password" name="c" required minlength="6" maxlength="15" />
+      <input type="number" name="d" min="100" max="500" />
+      <button>Submit</button>
+    </form>
+
+    <h1>Login Form</h1>
+
+    <form
+      action="/Html/5.%20Forms/"
+      style="display: flex; flex-direction: column; width: 300px; gap: 1rem"
+    >
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        name="username"
+        placeholder="Enter username"
+        required
+      />
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter email"
+        required
+      />
+      <label for="mobile">Mobile</label>
+      <input
+        id="mobile"
+        type="text"
+        name="mobile"
+        placeholder="Enter mobile no."
+      />
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        minlength="8"
+      />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
